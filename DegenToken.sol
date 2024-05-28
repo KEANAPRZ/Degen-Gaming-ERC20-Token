@@ -13,8 +13,8 @@ contract DegenToken is ERC20, Ownable {
     // This mapping keeps track of the amount of magic owned by each user.
     mapping(address => uint256) public magicOwned;
 
-
-constructo
+ // The constructor initializes the contract with an initial supply of tokens for the contract creator.
+constructor ()
 ERC20("Degen", "DGN") Ownable(msg.sender) {
         _mint(msg.sender, 10 * (10 ** uint256(decimals())));
     }
